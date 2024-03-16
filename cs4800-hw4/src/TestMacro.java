@@ -9,40 +9,51 @@ public class TestMacro {
         Customer customerFive= new Customer();
         Customer customerSix = new Customer();
 
+
         customerOne.setCustomerName(createCustomerName());
+        showDietPlans();
         customerOne.setCustomerDietPlan(createCustomerDietPlan());
 
         mealPlan(customerOne);
 
         customerTwo.setCustomerName(createCustomerName());
+        showDietPlans();
         customerTwo.setCustomerDietPlan(createCustomerDietPlan());
 
         mealPlan(customerTwo);
 
         customerThree.setCustomerName(createCustomerName());
+        showDietPlans();
         customerThree.setCustomerDietPlan(createCustomerDietPlan());
 
         mealPlan(customerThree);
 
         customerFour.setCustomerName(createCustomerName());
+        showDietPlans();
         customerFour.setCustomerDietPlan(createCustomerDietPlan());
 
         mealPlan(customerFour);
 
         customerFive.setCustomerName(createCustomerName());
+        showDietPlans();
         customerFive.setCustomerDietPlan(createCustomerDietPlan());
 
         mealPlan(customerFive);
 
         customerSix.setCustomerName(createCustomerName());
+        showDietPlans();
         customerSix.setCustomerDietPlan(createCustomerDietPlan());
 
         mealPlan(customerSix);
     }
 
+    public static void showDietPlans() {
+        System.out.println("Diet Plans: None, Paleo, Vegan, Nut Allergy");
+    }
+
     public static String createCustomerName() {
         Scanner reader = new Scanner(System.in);
-        String customerName = "";
+        String customerName;
 
         System.out.print("Enter customer name: ");
         customerName = reader.nextLine();
@@ -51,7 +62,7 @@ public class TestMacro {
 
     public static String createCustomerDietPlan() {
         Scanner reader = new Scanner(System.in);
-        String dietPlan = "";
+        String dietPlan;
 
         System.out.print("Enter diet plan: ");
         dietPlan = reader.nextLine();
